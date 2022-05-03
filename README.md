@@ -1,8 +1,11 @@
-Titulo do Projeto: Composteira Inteligente.
+Titulo do Projeto: 
+Composteira Inteligente.
 
 Objetivo:
+Nosso projeto visa facilitar e otimizar o método já utilizado por eles, conseguindo assim, produzir adubo de forma mais abundante, controlada e padronizada, favorecendo no desenvolvimento da agricultura familiar dos moradores locais e abrindo novas oportunidades.
 
 Contexto:
+A ilha das onças é um local com renda muito baixa e de difícil acesso para as tecnologias atuais, porém mesmo perante tais dificuldades, os moradores conseguem produzir renda e alimentos. Uma grande parte de tal atividade é a agricultura, partindo de tal afirmação, faz-se necessária a produção de adubo para maior eficiência de tal atividade, entretanto, o processo de compostagem dos moradores da ilha ainda é muito arcaico
 
 Tecnologias Utilizadas:
 - Arduíno UNO: será o "cérebro" do nosso projeto, trata-se de um controlador que cuida de toda nossa entrada, processamento e saída de dados.
