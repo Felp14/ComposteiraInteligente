@@ -15,5 +15,6 @@ Tecnologias Utilizadas:
 - Painel LCD: Painel que será utilizado para a visualização dos status da composteira, nele poderemos ver a taxa de umidade temperatura etc.
 
 Funcionalidades do produto:
+Nosso produto será chave fundamental para o sucesso do agricultor no que diz respeito a uma boa compostagem. Ele irá informar sobre a temperatura e umidade constatada no interior da composteira, além de ser abastecido por energia solar e alertar sobre o nível da caixa de chorume.
 
 Integrantes do projeto: Caio Johnston / Lucas Borges / Luiz Felipe Pina / Pedro Vitor Raiol / Vinicius Rayol.
