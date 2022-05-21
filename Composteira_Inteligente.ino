@@ -122,14 +122,14 @@ void loop() {
 
     delay(5000);
  
-    if(digitalRead(boia) == 0){
+    if(digitalRead(boia) == 1){
         lcd.clear();
         lcd.setCursor(0,0);
         lcd.print("Nivel do Chorume");
         lcd.setCursor(1,1);
         lcd.print("Status: Cheio!");
         
-    }else if(digitalRead(boia) == 1){
+    }else if(digitalRead(boia) == 0){
         lcd.clear();
         lcd.setCursor(0,0);
         lcd.print("Nivel do Chorume");
