@@ -39,7 +39,7 @@ void loop() {
         lcd.print(DHT.temperature);
         lcd.write(B11011111);
         lcd.print("C");
-        lcd.setCursor(1,1);
+        lcd.setCursor(0,1);
         lcd.print("Status: Abaixo!!!");
     }
     else if( DHT.temperature >= 23 && DHT.temperature < 30 )
@@ -50,7 +50,7 @@ void loop() {
         lcd.print(DHT.temperature);
         lcd.write(B11011111);
         lcd.print("C");
-        lcd.setCursor(1,1);
+        lcd.setCursor(0,1);
         lcd.print("Status: Bom.");
     }
     else if( DHT.temperature >= 30)
@@ -61,7 +61,7 @@ void loop() {
         lcd.print(DHT.temperature);
         lcd.write(B11011111);
         lcd.print("C");
-        lcd.setCursor(1,1);
+        lcd.setCursor(0,1);
         lcd.print("Status: Acima!!!");
     }
      delay(5000);
@@ -72,7 +72,7 @@ void loop() {
         lcd.print("Umid. M.:");
         lcd.print(DHT.humidity);
         lcd.print("%");
-        lcd.setCursor(1,1);
+        lcd.setCursor(0,1);
         lcd.print("Status: Abaixo!!!");
     }
     else if( DHT.humidity >= 80 && DHT.humidity < 90 )
@@ -82,7 +82,7 @@ void loop() {
         lcd.print("Umid. M.:");
         lcd.print(DHT.humidity);
         lcd.print("%");
-        lcd.setCursor(1,1);
+        lcd.setCursor(0,1);
         lcd.print("Status: Bom.");
     }
     else if( DHT.humidity >= 90)
@@ -92,7 +92,7 @@ void loop() {
         lcd.print("Umid. M.:");
         lcd.print(DHT.humidity);
         lcd.print("%");
-        lcd.setCursor(1,1);
+        lcd.setCursor(0,1);
         lcd.print("Status: Acima!!!");
     }
   delay(5000);
@@ -102,39 +102,40 @@ void loop() {
         lcd.clear();
         lcd.setCursor(0,0);
         lcd.print("Status do Humus:");
-        lcd.setCursor(1,1);
+        lcd.setCursor(0,1);
         lcd.print("Umidade Moderada!");
     }else if (val >= 400 && val <= 700)
     {
         lcd.clear();
         lcd.setCursor(0,0);
         lcd.print("Status do Humus:");
-        lcd.setCursor(1,1);
+        lcd.setCursor(0,1);
         lcd.print("Umidade Boa!");
     }else if ((val >= 0 && val < 200) || (val > 850 && val <= 1024))
     {
         lcd.clear();
         lcd.setCursor(0,0);
         lcd.print("Status do Humus:");
-        lcd.setCursor(1,1);
+        lcd.setCursor(0,1);
         lcd.print("Umidade Baixa!!!");
     }
 
     delay(5000);
- 
-    if(digitalRead(boia) == 1){
-        lcd.clear();
-        lcd.setCursor(0,0);
-        lcd.print("Nivel do Chorume");
-        lcd.setCursor(1,1);
-        lcd.print("Status: Cheio!");
         
-    }else if(digitalRead(boia) == 0){
+     if(digitalRead(boia) == 0){
         lcd.clear();
         lcd.setCursor(0,0);
         lcd.print("Nivel do Chorume");
-        lcd.setCursor(1,1);
+        lcd.setCursor(0,1);
         lcd.print("Status: OK!");
-    }
+    }else if(digitalRead(boia) == 1){
+        lcd.clear();
+        lcd.setCursor(0,0);
+        lcd.print("Nivel do Chorume");
+        lcd.setCursor(0,1);
+        lcd.print("Status: Cheio!");
+    } 
+  
   delay(5000); 
+  
 } 
